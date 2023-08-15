@@ -18,4 +18,13 @@ def ola():
     lista = [jogo1,jogo2,jogo3]
     return render_template('lista.html',titulo='Jogos',jogos=lista)
 
+
+
+@app.route('/apostilas')
+def apostilas_online():
+# inicio do trecho Python
+    lista_apostilas = ['HTML, CSS e Javascript', 'Java para Web']
+    return render_template('apostilas.html', lista=lista_apostilas)
+
+# fim trecho
 app.run()
