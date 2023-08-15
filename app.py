@@ -27,4 +27,10 @@ def apostilas_online():
     return render_template('apostilas.html', lista=lista_apostilas)
 
 # fim trecho
+
+
+@app.route('/novo')
+def novo():
+    return render_template('novo.html', titulo='Novo Jogo')
+
 app.run()
